@@ -39,7 +39,7 @@ export default {
           video: "/Guides/GuideEditTeam.mp4"
         },
         {
-          title: "Hoe verwijder mijn team?",
+          title: "Hoe verwijder ik mijn team?",
           video: "/Guides/GuideDeleteTeam.mp4"
         },
         {
@@ -75,7 +75,7 @@ export default {
           video: "/Guides/GuideResultTeamscan.mp4"
         },
         {
-          title: "Hoe exporteer ik her resultaat van een teamscan?",
+          title: "Hoe exporteer ik het resultaat van een teamscan?",
           video: "/Guides/GuideExportTeamscan.mp4"
         },
       ]

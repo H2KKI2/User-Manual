@@ -52,13 +52,13 @@
         </v-row>
         <v-row>
           <v-col class="mx-8 my-auto py-0 pl-0 ml-0" align="right">
-            <Button id="custom-disabled" @click.native="Login" :disabled="!isFormValid" :text="'Inloggen'"/>
+            <Button id="custom-disabled" :disabled="!isFormValid" :text="'Inloggen'"/>
           </v-col>
         </v-row>
         </v-form>
         <v-row>
           <v-col align="center" class="mx-8 py-5">
-            <NuxtLink to="/register">Nog geen account?</NuxtLink>
+            <NuxtLink>Nog geen account?</NuxtLink>
           </v-col>
         </v-row>
       </v-card>
@@ -97,22 +97,7 @@ export default {
   },
   methods: {
     async Login(){
-      const user = {
-        "Email": this.email,
-        "Password": this.password
-      }
 
-      try {
-        await this.$auth.loginWith('local', {
-          data: {
-            email: this.email,
-            password: this.password
-          }
-        })
-      }
-      catch (error) {
-        this.errorMessage = error.response.data.message
-      }
     },
     navigateHelp(){
       this.$router.push({path: 'help'})
